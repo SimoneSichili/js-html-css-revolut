@@ -108,12 +108,16 @@ header {
 
 /* dropdown menu */
 #nav-right .dropdown {
-    display: flex;
+    display: none;
     flex-direction: column;
     padding: 10px 30px;
     border-radius: 10px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
     background-color: #fff;
+}
+
+#nav-right .active {
+    display: flex;
 }
 
 #nav-right .list-drop li {
@@ -133,6 +137,18 @@ header {
     position: absolute;
     top: 75%;
     left: 130px;
+}
+
+#nav-right #chisiamo {
+    position: absolute;
+    top: 75%;
+    left: 260px;
+}
+
+#nav-right #aiuto {
+    position: absolute;
+    top: 75%;
+    left: 360px;
 }
 /* /dropdown menu */
 
