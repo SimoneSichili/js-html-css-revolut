@@ -76,8 +76,8 @@ header {
     font-weight: 700;
 }
 
-#nav-left .list-inline-l > ul > li > a,
-#nav-right .list-inline-r > ul >li > a {
+#nav-left .list-inline-l > li > a,
+#nav-right .list-inline-r  > li > a {
     display: inline-block;
     height: 100%;
     color: #b5b5b5;
@@ -180,7 +180,6 @@ header {
 #nav-right .list-container ul:nth-child(2n + 2) li:last-child a {
     color: #d5d5d5;
 }
-
 
 /* /dropdown menu */
 
