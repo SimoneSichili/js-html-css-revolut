@@ -38,7 +38,7 @@ a {
 header {
     width: 100%;
     height: 90px;
-    padding: 0 200px;
+    padding: 0 300px;
     background-color: #fff;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
@@ -48,7 +48,6 @@ header {
     height: 100%;
     display: flex;
     align-items: center;
-    /* position: relative; */
 }
 
 #nav-left > ul,
@@ -59,6 +58,7 @@ header {
 
 #nav-left #logo {
     width: 20px;
+    vertical-align: middle;
 }
 
 #nav-left .list-inline-l li {
@@ -119,17 +119,32 @@ header {
 /* dropdown menu */
 #nav-right .dropdown {
     display: none;
-    flex-direction: column;
-    width: 200px;
+    width: max-content;
     padding: 10px 30px;
     border-radius: 10px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
     background-color: #fff;
 }
 
+#nav-right .list-container ul:first-child {
+    margin-left: 0;
+}
+
 #nav-right .active {
-    display: flex;
+    display: block;
 } 
+
+#nav-right .position {
+    position: absolute;
+    top: 90%;
+    left: -30%;
+}
+
+#nav-right .list-container.position {
+    position: absolute;
+    top: 90%;
+    left: -400%;
+}
 
 #nav-right .list-drop li {
     padding: 0;
@@ -145,11 +160,27 @@ header {
     color: #000;
 }
 
-#nav-right .position {
-    position: absolute;
-    top: 90%;
-    left: -30%;
+#nav-right .list-container ul {
+    display: inline-block;
+    margin-left: 100px;
 }
+
+#nav-right .list-container .title {
+    color: #d5d5d5;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+#nav-right .list-container .title i {
+    margin-right: 10px;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+#nav-right .list-container ul:nth-child(2n + 2) li:last-child a {
+    color: #d5d5d5;
+}
+
 
 /* /dropdown menu */
 
